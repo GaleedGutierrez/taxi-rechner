@@ -1,0 +1,14 @@
+@use "../settings/variables";
+@use "../tools/functions";
+@use "../tools/mixins";
+
+.a-checkbox {
+	--accent-color: #{functions.light-dark(
+			variables.$accent-color-orange,
+			variables.$accent-color-white
+		)};
+
+	accent-color: var(--accent-color);
+	block-size: variables.$space-5;
+	inline-size: variables.$space-5;
+}

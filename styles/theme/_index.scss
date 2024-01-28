@@ -31,27 +31,11 @@
 
 	// Set colors
 	--background-color: #{functions.light-dark(
-			variables.$background-lightest-color,
-			variables.$background-dark-color
-		)};
-	--focus-color: #{functions.light-dark(
-			variables.$text-color,
-			variables.$text-color-white
+			variables.$white-background,
+			variables.$dark-background
 		)};
 	--text-color: #{functions.light-dark(
-			variables.$text-color,
+			variables.$text-color-black,
 			variables.$text-color-white
-		)};
-	--icon-color: #{functions.light-dark(
-			variables.$text-color,
-			variables.$text-color-white
-		)};
-	--icon-hover: #{functions.light-dark(
-			variables.$light-gray-200,
-			variables.$light-gray-400
-		)};
-	--icon-active-color: #{functions.light-dark(
-			variables.$text-color-white,
-			variables.$text-color
 		)};
 }

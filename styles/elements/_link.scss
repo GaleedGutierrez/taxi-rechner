@@ -3,14 +3,14 @@
 @use "../tools/mixins";
 
 a {
-	--hover-text-color: #{functions.light-dark(
-			variables.$gray-200,
-			variables.$light-gray-400
-		)};
-	--active-text-color: #{functions.light-dark(
-			variables.$light-black,
-			variables.$light-gray-100
-		)};
+	// --hover-text-color: #{functions.light-dark(
+	// 		variables.$gray-200,
+	// 		variables.$light-gray-400
+	// 	)};
+	// --active-text-color: #{functions.light-dark(
+	// 		variables.$light-black,
+	// 		variables.$light-gray-100
+	// 	)};
 
 	color: var(--text-color);
 	text-decoration: none;
@@ -21,9 +21,9 @@ a {
 		}
 	}
 
-	&:focus-visible {
-		@include mixins.focus-anchor;
-	}
+	// &:focus-visible {
+	// 	@include mixins.focus-anchor;
+	// }
 
 	&:active {
 		color: var(--active-text-color);

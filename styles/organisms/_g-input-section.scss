@@ -1,0 +1,13 @@
+@use "../settings/variables";
+
+.g-input-section {
+	margin-block-end: variables.$space-6;
+
+	&__title {
+		margin-block-end: variables.$space-5;
+	}
+
+	&__box {
+		margin-block-end: variables.$space-4;
+	}
+}

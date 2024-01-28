@@ -3,14 +3,14 @@
 @use "../tools/mixins";
 
 .is-skip-link {
-	--background-color: #{functions.light-dark(
-			variables.$background-light-dark-color,
-			variables.$background-lighter-gray-color
-		)};
-	--text-color: #{functions.light-dark(
-			variables.$text-color-white,
-			variables.$text-color
-		)};
+	// --background-color: #{functions.light-dark(
+	// 		variables.$background-light-dark-color,
+	// 		variables.$background-lighter-gray-color
+	// 	)};
+	// --text-color: #{functions.light-dark(
+	// 		variables.$text-color-white,
+	// 		variables.$text-color
+	// 	)};
 
 	position: absolute;
 	z-index: variables.$z-index-9-accessibility;

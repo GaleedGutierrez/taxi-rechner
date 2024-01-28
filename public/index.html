@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
@@ -9,10 +9,58 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<h1>XDDD</h1>
-		<img
-			src="https://i.imgur.com/5gfLSvJ.jpeg"
-			alt=""
-		/>
+		<main>
+			<section class="g-input-section">
+				<h2 class="g-input-section__title">Ingrese los datos</h2>
+				<div class="g-input-section__data">
+					<div class="m-text-field-box g-input-section__box">
+						<p class="">Precio por cada 100 metros</p>
+						<label
+							class=""
+							for="token-price"
+						>
+							<input
+								class="a-text-field"
+								type="number"
+								name="token-price"
+								id="token-price"
+								placeholder="$100"
+							/>
+						</label>
+					</div>
+					<div class="m-text-field-box g-input-section__box">
+						<p class="">Distancia en kilómetros</p>
+						<label
+							class=""
+							for="distance"
+						>
+							<input
+								class="a-text-field"
+								type="number"
+								name="distance"
+								id="distance"
+								placeholder="ej: 100Km"
+							/>
+						</label>
+					</div>
+					<label
+						class="m-roundtrip-container"
+						for="roundtrip"
+					>
+						<input
+							class="a-checkbox"
+							type="checkbox"
+							name="roundtrip"
+							id="roundtrip"
+						/>
+						<span>¿Es ida y vuelta?</span>
+					</label>
+				</div>
+			</section>
+			<section class="hidden">
+				<h2 class="o-text-align-center">Precio final</h2>
+				<h3 class="o-text-align-center">$10000</h3>
+			</section>
+		</main>
 	</body>
 </html>

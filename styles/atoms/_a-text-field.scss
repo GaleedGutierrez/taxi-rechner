@@ -1,0 +1,34 @@
+@use "../settings/variables";
+@use "../tools/functions";
+@use "../tools/mixins";
+
+.a-text-field {
+	--background-color: #{functions.light-dark(
+			variables.$white-orange,
+			variables.$grey
+		)};
+	--border-color: #{functions.light-dark(
+			variables.$orange,
+			oklch(0% 0 0deg / 0%)
+		)};
+	--shadow-color: #{functions.light-dark(
+			variables.$shadow-orange,
+			variables.$shadow-grey
+		)};
+
+	inline-size: 100%;
+	padding-block: variables.$space-2;
+	padding-inline: variables.$space-3;
+	border: variables.$space-025 solid var(--border-color);
+	border-radius: 0.8rem;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-size: variables.$fs-title-xl;
+	text-align: center;
+	box-shadow: variables.$space-0 variables.$space-1 variables.$space-2
+		var(--shadow-color);
+
+	&:focus-visible {
+		@include mixins.focus-input;
+	}
+}

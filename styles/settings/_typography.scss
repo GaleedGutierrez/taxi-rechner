@@ -31,6 +31,17 @@ $weight-black: 900;
 	src:
 		local("Poppins Regular"),
 		local("Poppins-Regular"),
+		url("@fonts/Poppins/Poppins-Medium.woff2") format("woff2");
+	font-style: normal;
+	font-weight: $weight-medium;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Poppins;
+	src:
+		local("Poppins Regular"),
+		local("Poppins-Regular"),
 		url("@fonts/Poppins/Poppins-Regular.woff2") format("woff2");
 	font-style: normal;
 	font-weight: $weight-normal;
