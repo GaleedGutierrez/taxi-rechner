@@ -1,0 +1,22 @@
+@use "../settings/variables";
+@use "../tools/functions";
+
+.m-text-field-box {
+	--shadow-color: #{functions.light-dark(
+			variables.$shadow-orange,
+			variables.$shadow-white
+		)};
+	--background-color: #{functions.light-dark(
+			variables.$background-white,
+			variables.$background-light-grey
+		)};
+
+	display: grid;
+	gap: variables.$space-3;
+	padding: variables.$space-3;
+	border-radius: variables.$space-2;
+	background-color: var(--background-color);
+	font-size: variables.$fs-title-lg;
+	box-shadow: variables.$space-0 variables.$space-1 variables.$space-2
+		var(--shadow-color);
+}

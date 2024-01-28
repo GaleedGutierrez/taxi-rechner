@@ -1,0 +1,8 @@
+@use "../settings/variables";
+
+.m-roundtrip-container {
+	display: flex;
+	gap: variables.$space-1;
+	align-items: center;
+	font-size: variables.$fs-title-lg;
+}
