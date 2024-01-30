@@ -13,8 +13,6 @@ const glob = require('glob-all');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { PurgeCSSPlugin } = require('purgecss-webpack-plugin');
 
-('purgecss-webpack-plugin');
-
 const IS_DEV = process.env.IS_DEV === 'true';
 const PATHS = {
 	public: path.join(__dirname, 'public'),
