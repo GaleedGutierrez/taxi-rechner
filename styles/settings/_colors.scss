@@ -10,10 +10,11 @@ $white-orange: $_cultured;
 
 // Background
 $white-background: $_cultured;
-$dark-background: oklch(23.65% 0.005 67.59deg);
 $background-white: $_pure-white;
+$dark-background: oklch(23.65% 0.005 67.59deg);
 $background-grey: $_pure-white;
 $background-light-grey: oklch(40.54% 0 0deg);
+$background-orange: oklch(75.23% 0.166 62.59deg);
 
 // Shadow
 $shadow-grey: oklch(98.04% 0.003 48.72deg / 8%);
