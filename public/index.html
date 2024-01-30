@@ -3,10 +3,88 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>Document</title>
+		<meta
+			name="description"
+			content="Calculadora para obtener el precio de un viaje en taxi."
+		/>
+		<meta
+			name="robots"
+			content="index,follow"
+		/>
+		<meta
+			property="og:url"
+			content="http://galeedgutierrez.com/taxi-rechner/"
+		/>
+		<meta
+			property="og:type"
+			content="website"
+		/>
+		<meta
+			property="og:site_name"
+			content="Calcular viaje"
+		/>
+		<meta
+			property="og:description"
+			content="Precio de un viaje en taxi."
+		/>
+		<meta
+			property="og:title"
+			content="Calcular viaje"
+		/>
+		<meta
+			property="og:image"
+			content="https://drive.google.com/uc?id=15JukWsayuZX0n9zIH25Cv7PCFmNQG9ls"
+		/>
+		<meta
+			property="og:locale"
+			content="es_ES"
+		/>
+		<meta
+			name="twitter:card"
+			content="summary_large_image"
+		/>
+		<meta
+			name="twitter:title"
+			content="Calcular viaje"
+		/>
+		<meta
+			name="twitter:description"
+			content="Precio de un viaje en taxi."
+		/>
+		<meta
+			name="twitter:image"
+			content="https://drive.google.com/uc?id=15JukWsayuZX0n9zIH25Cv7PCFmNQG9ls"
+		/>
+		<meta
+			name="twitter:site"
+			content="@GutierrezGaleed"
+		/>
+		<meta
+			name="twitter:creator"
+			content="@GutierrezGaleed"
+		/>
+		<link
+			rel="icon"
+			href="~@images/favicon/favicon.ico"
+			type="any"
+		/>
+		<link
+			rel="icon"
+			href="~@images/favicon/favicon.svg"
+			type="image/svg+xml"
+		/>
+		<link
+			rel="apple-touch-icon"
+			href="~@images/favicon/apple-touch-icon.png"
+		/>
+		<title>Calcular viaje</title>
 	</head>
 	<body>
 		<main>
@@ -44,7 +122,7 @@
 						</label>
 					</div>
 					<label
-						class="m-roundtrip-container"
+						class="m-roundtrip-container g-input-section__box"
 						for="roundtrip"
 					>
 						<input
@@ -55,12 +133,28 @@
 						/>
 						<span>¿Es ida y vuelta?</span>
 					</label>
+					<button
+						id="button-calculate"
+						class="a-calculate-button"
+					>
+						Calcular
+					</button>
 				</div>
 			</section>
-			<section class="hidden">
-				<h2 class="o-text-align-center">Precio final</h2>
-				<h3 class="o-text-align-center">$10000</h3>
+			<section
+				id="final-price-container"
+				class="hidden"
+			>
+				<h3 class="o-text-align-center">Precio final</h3>
+				<h2
+					class="o-text-align-center"
+					id="final-price"
+				></h2>
 			</section>
 		</main>
 	</body>
+	<script
+		defer="defer"
+		src="https://www.googletagmanager.com/gtag/js?id=G-M8H4YB694S"
+	></script>
 </html>

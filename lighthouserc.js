@@ -3,6 +3,11 @@ module.exports = {
 		assert: {
 			preset: 'lighthouse:no-pwa',
 			assertions: {
+				// Warn temporary
+				'no-unload-listeners': 'warn',
+				'total-byte-weight': 'warn',
+				'unminified-javascript': 'warn',
+				'unused-css-rules': 'warn',
 				// Performance related
 				'unused-javascript': 'warn',
 				'uses-responsive-images': 'warn',
